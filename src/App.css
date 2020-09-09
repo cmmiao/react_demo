@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  display: flex;
 }
 
 .App-logo {
@@ -13,15 +14,34 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
+.App-left {
+  /* background-color: #fff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: white; */
+  width: 400px;
+  min-height: 100vh;
+  border-right: 1px solid #ccc;
+  display: flex;
+  flex-wrap: wrap;
+}
+.dp-left-item{
+  box-sizing: border-box;
+  width: 130px;
+  height: 80px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.App-center {
+  position: relative;
+  width: 800px;
+  min-height: 100vh;
+  border-right: 1px solid #ccc;
 }
 
 .App-link {
@@ -35,4 +55,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+input{
+  border: 1px solid #ccc;
+  margin: 20px;
 }
